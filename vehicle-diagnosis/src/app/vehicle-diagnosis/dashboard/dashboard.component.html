@@ -1,0 +1,14 @@
+<h1>Dashboard</h1>
+<div class="pcm-flex pcm-flex-space-around pcm-button:hover">
+  <button
+    routerLink="/vehicle-diagnosis/dashboard/{{
+      vehicleId
+    }}/component-details/{{ componentId }}"
+  >
+    Go to component-details
+  </button>
+  <button routerLink="/vehicle-diagnosis/dashboard/{{ vehicleId }}">
+    Go to back to Dashboard
+  </button>
+</div>
+<app-component-details *ngIf="showComponentDetails"></app-component-details>

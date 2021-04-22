@@ -1,0 +1,14 @@
+<h3>AuthGuard</h3>
+<span>User is authenticated: {{ authStatus }}</span>
+<div>
+    <button (click)="setAuthenticated(true)">authenticated</button>
+    <button (click)="setAuthenticated(false)">unauthenticated</button>
+</div>
+
+<h3>RoleGuards</h3>
+<span>User role: {{ userRole }}</span>
+<div>
+    <button (click)="setUserRole(userRoleEnum.VehicleOwner)">vehicle owner</button>
+    <button (click)="setUserRole(userRoleEnum.Garage)">garage</button>
+    <button (click)="setUserRole(userRoleEnum.FleetManager)">fleet manager</button>
+</div>
